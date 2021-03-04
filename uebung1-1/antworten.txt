@@ -1,0 +1,2 @@
+1) phpinfo();
+2) Es wird vom Server gestartet (IP-Adresse rechts)
