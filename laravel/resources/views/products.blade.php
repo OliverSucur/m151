@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <a href="login">Login</a>
     <table>
         <tr>
             <th>Name</th>

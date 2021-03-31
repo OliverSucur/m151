@@ -18,7 +18,6 @@
             <td>{{ $product->name }}</td>
             <td>{{ $product->price }}</td>
             <td><a href="/product/{{ $product->id }}">Link</a></td>
-            <td><a href="/cart/{{ $product->id }}">Zum Warenkorb hinzufügen</a></td>
         </tr>
         @endforeach
     </table>

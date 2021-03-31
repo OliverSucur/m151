@@ -26,6 +26,10 @@ class CreateProductsTable extends Migration
 
         DB::table('products')->insert([
             ['name' => 'Baum', 'price' => 29.3, 'details' => 'Ist ein guter Baum', 'manual' => 'Kann Luft machen', 'image' => 'image', ],
+            ['name' => 'Blume', 'price' => 69, 'details' => 'Ist eine gute Blume', 'manual' => 'Kann Luft machen', 'image' => 'image', ],
+            ['name' => 'Apfel', 'price' => 8.6, 'details' => 'Ist ein guter Apfel', 'manual' => 'Kann Luft machen', 'image' => 'image', ],
+            ['name' => 'Birne', 'price' => 9.2, 'details' => 'Ist eine gute Birne', 'manual' => 'Kann Luft machen', 'image' => 'image', ],
+            ['name' => 'Banane', 'price' => 2.5, 'details' => 'Ist eine gute Banane', 'manual' => 'Kann Luft machen', 'image' => 'image', ],
         ]);
     }
 

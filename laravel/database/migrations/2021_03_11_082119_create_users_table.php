@@ -24,7 +24,7 @@ class CreateUsersTable extends Migration
             $table->string('street');
             $table->integer('zip');
             $table->string('city');
-            $table->integer('phone');
+            $table->string('phone');
         });
     }
 
