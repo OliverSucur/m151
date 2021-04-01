@@ -28,3 +28,9 @@ Route::post('/loginUser', [\App\Http\Controllers\LoginController::class, 'login'
 Route::get('/register', [\App\Http\Controllers\RegisterController::class, 'openRegisterView']);
 
 Route::post('/registerUser', [\App\Http\Controllers\RegisterController::class, 'register']);
+
+Route::get('/order', [\App\Http\Controllers\OrderController::class, 'openOrderView']);
+
+Route::get('/finishOrder', [\App\Http\Controllers\OrderController::class, 'order']);
+
+Route::get('/orderHistory', [\App\Http\Controllers\OrderHistoryController::class, 'openOrdersView']);

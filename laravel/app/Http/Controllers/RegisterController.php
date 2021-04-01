@@ -26,8 +26,9 @@ class RegisterController extends Controller
         if($password === $confirmPassword){
             DB::insert('INSERT INTO users (email, password, first_name, last_name, street, zip, city, phone) VALUES (?, ?, ?, ?, ?, ?, ?, ?)',
             [$email, password_hash($password, PASSWORD_DEFAULT), $firstname, $lastname, $street, $zip, $city, $phone]);
+            echo 'Registrierung erfolgreich';
         }else{
-            return view('cart');
+            echo 'Registrierung fehlgeschlagen;';
         }
     }
 }

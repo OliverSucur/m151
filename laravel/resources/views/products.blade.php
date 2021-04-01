@@ -25,7 +25,9 @@
         </tr>
         @endforeach
     </table>
-    <a href="/cart">zum Warenkorb</a>
+    <br><br>
+    <a href="/cart">zum Warenkorb</a><br>
+    <a href="/orderHistory">Meine Bestellungen</a>
 </body>
 
 </html>

@@ -11,10 +11,12 @@ class LoginController extends Controller
         $users = \App\Models\User::all();
         foreach($users as $user){
             if($user->email == $request->i_email && password_verify($request->i_password, $user->password)){
-                echo 'yes';
-                break;
+                session(['isLoggedIn' => 1]);
+                session(['userId' => $user->id]);
+                echo 'Login erfolgreich';
             }else{
-                echo 'no';
+                session(['isLoggedIn' => 0]);
+                echo 'Login fehlgeschlagen';
             }
         }
     }

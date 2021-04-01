@@ -26,6 +26,7 @@ class ProductController extends Controller
         }else{
             session(['cart' => []]);
         }
+        echo 'Produkt wurde hinzugefügt';
     }
 
     public function openCart(){
